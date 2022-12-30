@@ -1,11 +1,11 @@
-# Sync Net
+# Syn Net
 
-Synchronization primitives for Closed Networks.
+Synchronization primitives for networks.
 
 ## Goals
 
-* Create a connection manager capable of enforcing access to NICs via "Networking Locks" (NLs)
-* Build tools to monitor and debug NLs
+* Create a connection manager capable of enforcing access to networking hardware via Locks
+* Build tools to monitor and debug these locks
 
 ## Background
 
@@ -21,7 +21,7 @@ The goal of this project is to allow such closed systems to coordinate and contr
 
 ## Introduction
 
-A "Network Lock" is something a discerning developer can use (eg as a software object) to ask the system for guarantees.
+A "Network Lock" (NL) is something a discerning developer can use (eg as a software object) to ask the system for guarantees.
 
 In return, the system will require certain guarantees from the user. These guarantees will take the form of a "Critical Section Contract" (CSC).
 
